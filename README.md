@@ -1,4 +1,4 @@
-# 🌌 StarkEffect
+# StarkEffect
 
 **The Autonomous Dev Studio Persona & x402 Micropayment Storefront**
 
@@ -8,7 +8,7 @@ StarkEffect can interpret user requirements, instantly generate valid StarkBot `
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 - **Companion Skill (`starkeffect_manager.md`)**: The LLM persona. Instructed to act as a vendor, quote prices (0.001 ETH), and orchestrate the `forge_skill` and `serve_skill` tools.
 - **Microservice Module (`modules/starkeffect/service.py`)**: A FastAPI server acting as the backend brain. 
@@ -17,7 +17,7 @@ StarkEffect can interpret user requirements, instantly generate valid StarkBot `
 
 ---
 
-## 🚀 Quick Setup
+## Quick Setup
 
 1. **Environment Variables**:
    Ensure you have the following exported in your environment before running your StarkBot:
@@ -39,7 +39,7 @@ StarkEffect can interpret user requirements, instantly generate valid StarkBot `
 
 ---
 
-## 💬 Usage Example (The "Aha!" Moment)
+## Usage Example
 
 Here is a real interaction demonstrating the full flow, proving why this submission is a game-changer for agent-to-human commerce:
 
@@ -72,7 +72,7 @@ Here is a real interaction demonstrating the full flow, proving why this submiss
 
 ---
 
-### 🔥 Why This Wins
+### Why This Works
 1. **True Autonomy**: The agent writes its own code based on natural language.
 2. **Economic Agency**: The agent natively understands its worth and enforces an x402 payment wall before delivering value.
 3. **Clean Architecture**: Dynamically isolated `storefront` directory and isolated FastAPI microservice following strict StarkBot RPC envelopes.
