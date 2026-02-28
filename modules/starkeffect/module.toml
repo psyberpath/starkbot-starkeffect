@@ -1,0 +1,35 @@
+[module]
+name = "starkeffect"
+version = "1.0.0"
+description = "Autonomous Skill Generator and x402 Storefront"
+author = "starkbot"
+
+[service]
+command = "uv run service.py"
+default_port = 9103
+has_dashboard = false
+health_endpoint = "/rpc/status"
+
+[[tools]]
+name = "forge_skill"
+description = "Generates a new StarkBot skill using the Gemini API and saves it to the storefront."
+rpc_method = "POST"
+rpc_endpoint = "/rpc/forge"
+
+[tools.parameters.prompt]
+type = "string"
+required = true
+
+[[tools]]
+name = "serve_skill"
+description = "Verifies an x402 payment from the buyer's address and returns the generated skill."
+rpc_method = "POST"
+rpc_endpoint = "/rpc/serve"
+
+[tools.parameters.skill_name]
+type = "string"
+required = true
+
+[tools.parameters.from_address]
+type = "string"
+required = true
